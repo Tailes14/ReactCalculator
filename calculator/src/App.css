@@ -36,3 +36,71 @@
     transform: rotate(360deg);
   }
 }
+/* Style for my calculator */
+.Border {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 750px;
+  width: 500px;
+  margin: -375px 0 0 -250px;
+  background-color:blue;
+  color:white;
+}
+
+.Display {
+  background-color:black;
+  height: 25%;
+  width:100%;
+}
+
+.Display span {
+  position: absolute;
+  bottom: 75%;
+  right: 0;
+  font-size: 100px;
+}
+
+.Numbers {
+  background-color: grey;
+  width:80%;
+  height:75%;
+  float: left;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:center;
+  align-items: center;
+}
+
+.numberButton {
+  border-style: solid;
+  border-color:black;
+  height:18.75%;
+  width:31%;
+}
+
+.numberButtonZero {
+  border-style: solid;
+  border-color:black;
+  height: 18.75%;
+  width:63%;
+}
+
+.Functions {
+  background-color: lightgray;
+  float: right;
+  height: 75%;
+  width:20%;
+}
+
+.functionButton {
+  border: 1px solid black;
+  margin-top:91.9%;
+}
+
+/* ID's for buttons */
+
+#one {
+  background-image: url();
+  background-color: orange;
+}

@@ -1,23 +1,56 @@
 import logo from './logo.svg';
 import './App.css';
 
+
+
+function NumberButtons() {
+  return <>
+  <div className="Numbers">
+  <div className = "numberButton" id="one"></div>
+    <div className = "numberButton"></div>
+    <div className = "numberButton"></div>
+    <div className = "numberButton"></div>
+    <div className = "numberButton"></div>
+    <div className = "numberButton"></div>
+    <div className = "numberButton"></div>
+    <div className = "numberButton"></div>
+    <div className = "numberButton"></div>
+    <div className = "numberButtonZero"></div>
+    <div className = "numberButton"></div>
+  </div>
+  </>
+}
+
+function FunctionButtons() {
+  return <>
+  <div className="Functions">
+    <div className = "functionButton"></div>
+    <div className = "functionButton"></div>
+    <div className = "functionButton"></div>
+    <div className = "functionButton"></div>
+    <div className = "functionButton"></div>
+    <div className = "functionButton"></div>
+  </div>
+  </>
+}
+
+function Display() {
+  return <>
+  <div className="Display">
+  <span>0</span>
+  </div>
+  </>
+}
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <span>React Calculator</span>
+      <div className="Border">
+        <Display/>
+        <NumberButtons/>
+        <FunctionButtons/>
+      </div>
     </div>
   );
 }
