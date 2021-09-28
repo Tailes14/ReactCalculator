@@ -91,16 +91,138 @@
   float: right;
   height: 75%;
   width:20%;
+  display: flex;
+  flex-flow: row wrap;
+
 }
 
 .functionButton {
-  border: 1px solid black;
-  margin-top:91.9%;
+  border-style: solid;
+  border-color:black;
+  justify-content:center;
+  align-items: center;
+  height: 15.6%;
+  width:100%
 }
 
 /* ID's for buttons */
 
 #one {
-  background-image: url();
-  background-color: orange;
+  background-image: url("./imgs/1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#two {
+  background-image: url("./imgs/2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#three {
+  background-image: url("./imgs/3.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#four {
+  background-image: url("./imgs/4.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#five {
+  background-image: url("./imgs/5.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#six {
+  background-image: url("./imgs/6.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#seven {
+  background-image: url("./imgs/7.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#eight {
+  background-image: url("./imgs/8.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#nine {
+  background-image: url("./imgs/9.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#zero {
+  background-image: url("./imgs/0.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#decimal {
+  background-image: url("./imgs/decimal.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+#division {
+  background-image: url("./imgs/divide.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#multiplication {
+  background-image: url("./imgs/multiply.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#minus {
+  background-image: url("./imgs/subtract.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#addition {
+  background-image: url("./imgs/add.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#equal {
+  background-image: url("./imgs/equal.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#clear {
+  background-image: url("./imgs/clear.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
