@@ -1,12 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import {useState} from 'react'
 
 
 
-function NumberButtons() {
+
+function NumberButtons(value, setValue) {
+
+  const handleClick = (event) => {
+    setValue = event.target.id
+    console.log(setValue)
+    value = setValue
+  }
+
   return <>
   <div className="Numbers">
-  <div className = "numberButton" id="seven"></div>
+  <div className = "numberButton" id="seven" onClick={handleClick}></div>
     <div className = "numberButton" id="eight"></div>
     <div className = "numberButton" id="nine"></div>
     <div className = "numberButton" id="four"></div>
@@ -21,7 +30,7 @@ function NumberButtons() {
   </>
 }
 
-function FunctionButtons() {
+function FunctionButtons(setValue) {
   return <>
   <div className="Functions">
     <div className = "functionButton" id="clear"></div>
@@ -34,22 +43,26 @@ function FunctionButtons() {
   </>
 }
 
-function Display() {
+function Display(value) {
+  console.log(value)
+  let tempVal = 0
+
   return <>
   <div className="Display">
-  <span>0</span>
+  <span>{tempVal}</span>
   </div>
   </>
 }
 
 function App() {
+  const [value, setValue] = useState("0")
   return (
     <div className="App">
       <span>React Calculator</span>
       <div className="Border">
-        <Display/>
-        <NumberButtons/>
-        <FunctionButtons/>
+        <Display value={value}/>
+        <NumberButtons setValue={setValue}/>
+        <FunctionButtons setValue={setValue}/>
       </div>
     </div>
   );
