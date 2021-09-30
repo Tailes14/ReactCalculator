@@ -119,7 +119,7 @@ function App() {
     } else if (symbol === '*') {
       setCurrValue(prevInput * currValue)
     } else if (symbol === '/') {
-      setCurrValue(prevInput / currValue)
+      setCurrValue((prevInput / currValue).toFixed(2))
     }
   }
 
