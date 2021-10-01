@@ -93,7 +93,14 @@
   width:20%;
   display: flex;
   flex-flow: row wrap;
+}
 
+.functionButton:active {
+  background-color:lightcoral;
+}
+
+.numberButton:active {
+  background-color:lightcoral;
 }
 
 .functionButton {
