@@ -59,7 +59,6 @@ function App() {
   const [currValue, setCurrValue] = useState(0)
   const [prevInput, setPrevInput] = useState(null)
   const [symbol, setSymbol] = useState()
-  const [temp, setTemp] = useState(0)
 
   // couldnt get a function for individual buttons to get setValue to work, so just defining them all App
   // taking care of number assingments
